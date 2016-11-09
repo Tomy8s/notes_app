@@ -9,7 +9,7 @@
         return "You don't have any notes.";
     } else {
       parsedList = this.addListDivAndJoin(noteList.returnNotes());
-      return this.addULTags(parsedList)
+      return this.addULTags(parsedList);
     }
   };
 
