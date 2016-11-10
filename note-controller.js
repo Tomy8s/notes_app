@@ -25,7 +25,9 @@
 	form = document.getElementById('textForm');
 	form.addEventListener('submit', function(event) {
 		event.preventDefault();
-		console.log(event);
+		noteController.noteList.addNote(new Note(document.getElementById('text').value));
+		noteController.displayNotes();
+		document.getElementById('text').value = '';
 	});
 
 	function getIdFromUrl() {
